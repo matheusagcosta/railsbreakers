@@ -1,0 +1,70 @@
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 979px) {
+	ul {
+	  display: table;
+	  margin: 5% auto;
+	  width: 90%;  
+	  
+	  li {
+	    float: left;
+	    padding: 0 0 0 2%;
+	    width: calc(100% / 2);
+
+	    img {
+	      cursor: pointer;
+	      display: block;
+        margin:0 auto;
+
+	      &.active {
+	        border: 5px solid #8FC29C;
+	      }
+	    }
+
+	    &:nth-child(3) {
+        width: 100%;
+
+	      img {
+	        -moz-animation: rotate 3.5s infinite;
+	        -webkit-animation: rotate 3.5s infinite;
+	        cursor: default;
+          display: table;
+          margin: 0 auto;
+
+	        &.active {
+	          border: none;
+	        }
+	      }
+	    }
+	  }
+	}
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+/* iPad Retina ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2.0),
+only screen and (min-device-pixel-ratio : 2.0) {
+/* Styles */
+}
