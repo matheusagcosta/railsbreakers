@@ -1,17 +1,25 @@
 h1.headlines.text-centered Read it Synced
 ul
   li
-    = image_tag 'pocket.png' 
+    = image_tag 'pocket.png'
   li
-    = image_tag 'readability.png' 
+    = image_tag 'readability.png'  
   li
-    = image_tag 'sync.png' 
+    = image_tag 'sync.png'  
   li
-    = image_tag 'instapaper.png' 
+    = image_tag 'instapaper.png'  
   li
-    = image_tag 'kippt.png' 
+    = image_tag 'kippt.png'  
 = link_to "SIGN UP NOW", pages_step2_path, class:'text-centered btn'
 
 
 = link_to 'link to pocket', pocket_login_path
+
+javascript:
+  $(document).ready(function(){
+    $("img").click(function(){
+      var $this = $( this );
+      $this.toggleClass("active");
+    });
+  });
 

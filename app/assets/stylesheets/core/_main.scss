@@ -48,6 +48,18 @@ body, h1, h2, h3, h4, h5, h6 {
   line-height: 140px;
   position: fixed;
   width: 100%;
+
+  &.btn-pocket {
+    background: #ff4e6b image-url("pocket-icon.png") no-repeat;
+    color: #FFF;
+    width: 50%;
+  }
+  &.btn-instapaper {
+    background: #FFF image-url("instapaper-icon.png") no-repeat;
+    color: #000;
+    right: 0;
+    width: 50%;
+  }
 }
 
 ul {
@@ -59,6 +71,16 @@ ul {
     float: left;
     padding: 0 0 0 2%;
     width: calc(100% / 5);
+
+    img {
+      cursor: pointer;
+      display: block;
+
+      &:focus,
+      &:active {
+        border: 5px solid #8FC29C;
+      }
+    }
 
     &:nth-child(3) {
 
@@ -88,4 +110,5 @@ ul {
 50%  {-webkit-transform: rotate(180deg);}
 100% {-webkit-transform: rotate(360deg);}
 }
+
 
