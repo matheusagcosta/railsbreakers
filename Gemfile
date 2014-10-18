@@ -19,7 +19,7 @@ gem 'neat',                   '1.6.0'
 gem 'bitters',                '0.10.1'
 gem 'refills',                '0.0.2'
 gem 'instapaper'
-gem 'pocket-ruby',            '~> 0.0.5'
+gem 'pocket-ruby',            '~> 0.0.5', require: 'pocket'
 
 group :production, :staging do
   gem 'rails_12factor',       '0.0.2'
