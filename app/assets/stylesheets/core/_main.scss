@@ -49,3 +49,19 @@ body, h1, h2, h3, h4, h5, h6 {
   position: fixed;
   width: 100%;
 }
+
+ul {
+  display: table;
+  margin: 5% auto;
+  width: 90%;  
+  
+  li {
+    float: left;
+    padding: 0 0 0 2%;
+    width: calc(100% / 5);
+
+    &:nth-child(3) {
+
+    }
+  }
+}
