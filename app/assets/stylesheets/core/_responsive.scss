@@ -47,7 +47,24 @@
 }
 
 @media only screen and (max-width : 480px) {
-
+	html {
+		overflow: hidden;
+	}
+	.headlines {
+    font-size: 35px;
+	}
+	.btn {
+    font-size: 25px;
+    height: 80px;
+    line-height: 80px;
+  }
+  ul {
+  	li {
+  		img {
+  			max-width: 100px;
+  		}
+  	}
+  }
 }
 
 @media only screen and (max-width : 320px) {
