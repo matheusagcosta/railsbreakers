@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  CALLBACK_URL = "http://localhost:3000/pages/pocket_callback"
+  CALLBACK_URL = "#{ root_url }/pages/pocket_callback"
   def step1
-
+    binding.pry
   end
 
   def step2
