@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.readability.com/api/rest/v1/bookmarks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="guiloyins", oauth_nonce="kp4ufyF2ArFEh0tu09i6V33Go1JQMUKoOQ7XviH4Tk4",
+        oauth_signature="Lfcubv0UUgJYnOLFQQJ5oH34udc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1413696618", oauth_token="LXSUxcxGASBgMHsSZD", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 19 Oct 2014 05:33:05 GMT
+      P3p:
+      - CP='Legacy Only. Go to https://readability.com/about/terms/ for full terms.'
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Set-Cookie:
+      - readabilityToken=cyGuPrDY8BAUzvHnprrM4z7rpq2WpCBjpeS5sKUN; expires=Sun, 16-Nov-2014
+        05:33:05 GMT; Max-Age=2419200; Path=/
+      Vary:
+      - Accept-Encoding
+      - Authorization, Cookie
+      Content-Length:
+      - '840'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "bookmarks": [
+                {
+                    "user_id": 1606324,
+                    "read_percent": "0.00",
+                    "tags": [],
+                    "date_updated": "2014-10-18 19:27:47",
+                    "favorite": false,
+                    "id": 78254668,
+                    "date_archived": null,
+                    "date_opened": null,
+                    "article": {
+                        "domain": "www.akitaonrails.com",
+                        "title": "Learn about Ruby, Rails, and all new technologies that are trending right now!",
+                        "url": "http://www.akitaonrails.com/2010/07/19/screencast-comecando-com-vim",
+                        "lead_image_url": "http://s3.amazonaws.com/akitaonrails/assets/2010/7/19/Screen%20shot%202010-07-19%20at%204.41.45%20AM_original.png?1279525339",
+                        "author": null,
+                        "excerpt": "Atualiza&#xE7;&#xE3;o 2013: Este screencast utiliza uma vers&#xE3;o antiga de dotfiles. Hoje em dia estou usando o YADR que &#xE9; muito superior. O Screencast ainda ensina a usar o geral de Vim por&hellip;",
+                        "direction": "ltr",
+                        "word_count": 881,
+                        "date_published": "2010-07-19 00:00:00",
+                        "dek": null,
+                        "processed": true,
+                        "id": "ilpak6lu"
+                    },
+                    "article_href": "/api/rest/v1/articles/ilpak6lu",
+                    "date_favorited": null,
+                    "date_added": "2014-10-18 19:27:47",
+                    "archive": false
+                }
+            ],
+            "meta": {
+                "num_pages": 1,
+                "page": 1,
+                "item_count_total": 1,
+                "item_count": 1
+            },
+            "conditions": {
+                "opened_since": null,
+                "added_until": null,
+                "domain": "",
+                "updated_until": null,
+                "tags": [],
+                "archive": null,
+                "archived_until": null,
+                "favorite": null,
+                "opened_until": null,
+                "archived_since": null,
+                "favorited_since": null,
+                "updated_since": null,
+                "exclude_accessibility": "",
+                "per_page": 20,
+                "favorited_until": null,
+                "order": "-date_added",
+                "only_deleted": null,
+                "page": 1,
+                "added_since": null,
+                "user": "MarcioJunior"
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 19 Oct 2014 05:30:19 GMT
+recorded_with: VCR 2.9.3
