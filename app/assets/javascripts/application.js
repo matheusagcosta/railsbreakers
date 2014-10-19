@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require navigation
+
+$(function() {
+  $('#sync_button').click(function() {
+    $('#sync_image').addClass('sync');
+  })
+});

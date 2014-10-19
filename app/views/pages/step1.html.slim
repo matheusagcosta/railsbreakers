@@ -9,7 +9,8 @@ ul.readers
       .pulse
         = image_tag 'readability.png', class: "#{'active' if is_authenticated_in?(:readability)}"
   li
-    = image_tag 'sync.png'
+    #sync_image
+      = image_tag 'sync.png'
   li
     .flip
       .flipper
@@ -23,7 +24,7 @@ ul.readers
         div
           span Soon
 - if authenticated_providers.size > 1
-  = link_to 'Synchronize now', sync_path, class:'text-centered btn', method: :post
+  = link_to 'Synchronize now', sync_path, class:'text-centered btn', id: 'sync_button', method: :post
 - else
   .space-fix
   span.text-centered.btn Please select a service
