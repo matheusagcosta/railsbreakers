@@ -65,9 +65,6 @@
 }
 
 @media only screen and (max-width : 480px) {
-	html, body {
-		overflow-y: hidden !important;
-	}
 	.logo {
 		background-size: 80%;
 		margin-top: 10px;
@@ -76,21 +73,30 @@
     font-size: 25px;
 	}
 	.btn {
-    font-size: 25px;
-    height: 80px;
-    line-height: 80px;
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px;
   }
+  .space-fix {
+	  height: 70px;
+	}
   ul.readers {
   	li {
   		img {
-  			max-width: 125px;
+  			max-width: 100px;
   		}
   	}
   }
 }
 
 @media only screen and (max-width : 320px) {
-
+  ul.readers {
+  	li {
+  		img {
+  			max-width: 80px;
+  		}
+  	}
+  }
 }
 
 

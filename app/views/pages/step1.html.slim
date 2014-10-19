@@ -25,5 +25,6 @@ ul.readers
 - if is_authenticated_in?(:pocket) && is_authenticated_in?(:readability)
   = link_to 'Synchronize now', sync_path, class:'text-centered btn', method: :post
 - else
+  .space-fix
   span.text-centered.btn Please select a service
 

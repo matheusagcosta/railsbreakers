@@ -62,9 +62,14 @@ a:hover {
 
 .headlines {
 	color: #2d3035;
-  font-size: 60px;
+  font-size: 50px;
   margin-top: 3%;
 	text-transform: uppercase;
+}
+
+.space-fix {
+  position: relative;
+  height: 120px;
 }
 
 .btn {
@@ -75,7 +80,7 @@ a:hover {
   font-size: 30px;   
   height: 120px;
   line-height: 120px;
-  position: absolute;
+  position: fixed;
   text-transform: uppercase;
   width: 100%;
 
@@ -238,8 +243,14 @@ ul.readers {
 }
 
 
+/** Rails Rumble **/
+
 #rumbleCloseButton {
   right: 33% !important;
+}
+
+#rumble2014 {
+  z-index: 1 !important;
 }
 
 /** Flash Messages **/
