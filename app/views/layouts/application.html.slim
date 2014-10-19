@@ -20,13 +20,6 @@ html lang="pt"
       script src="http://html5shim.googlecode.com/svn/trunk/html5.js"
 
     /! Place this before your </body> tag.
-    javascript:
-      | var rumbleBannerBackgroundColor, rumbleBannerTextColor, rumbleBannerLinkColor, rumbleBannerPlacement;
-      | rumbleBannerBackgroundColor = "#161616  ";
-      | rumbleBannerTextColor = "#b0b0b0  ";
-      | rumbleBannerLinkColor = "#ffffff  ";
-      | rumbleBannerPlacement = "top"; // Optionally replace with "bottom".
-    script src="http://s0.railsrumble.com/banner-2014.js" type="text/javascript"
 
   body class=body_class
 
@@ -45,3 +38,11 @@ html lang="pt"
       li.cd-label After that, you just need to click on the button "Synchronize now" and voilà, the magic happens.
     = render 'flash_messages'
     = yield
+    
+    javascript:
+      var rumbleBannerBackgroundColor, rumbleBannerTextColor, rumbleBannerLinkColor, rumbleBannerPlacement;
+      rumbleBannerBackgroundColor = "#161616  ";
+      rumbleBannerTextColor = "#b0b0b0  ";
+      rumbleBannerLinkColor = "#ffffff  ";
+      rumbleBannerPlacement = "top";
+    script src="http://s0.railsrumble.com/banner-2014.js" type="text/javascript"
