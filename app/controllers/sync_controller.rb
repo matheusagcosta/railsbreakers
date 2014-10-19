@@ -11,11 +11,8 @@ class SyncController < ApplicationController
   private
     def authendicated_providers
       providers = []
-      if is_authenticated_in?(:readability)
-        providers << ReadabilityProvider.new(session[:readability_token], session[:readability_secret])
-      elsif is_authenticated_in?(:pocket)
-        # providers << PocketProvider.new()
-      end
+      providers << ReadabilityProvider.new(session[:readability_token], session[:readability_secret]) if is_authenticated_in?(:readability)
+      providers << PocketProvider.new(session[:pocket_access_token]) if is_authenticated_in?(:pocket)
       providers
     end
 end
