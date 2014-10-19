@@ -255,14 +255,23 @@ ul.readers {
 
 /** Flash Messages **/
 
-#flash_alert {
-  border: 1px solid #CA5E59;
+#flash_alert,
+#flash_notice {
   border-radius: 6px;
   padding: 15px;
-  color: #CA5E59;
   width: 90%;
   display: table;
   margin: 1% auto 0;
+}
+
+#flash_alert {
+  border: 1px solid #CA5E59;
+  color: #CA5E59;
+}
+
+#flash_notice {
+  border: 1px solid #73B573;
+  color: #73B573;
 }
 
 
