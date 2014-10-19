@@ -1,24 +1,26 @@
 h1.headlines.text-centered Read it Synced
 ul.readers
   = link_to pocket_login_path do
-    li 
+    li
       = image_tag 'pocket.png', class: "#{'active' if session[:pocket_access_token]}"
+
+  = link_to "/auth/readability" do
+    li
+      = image_tag 'readability.png', class: "#{'active' if is_authenticated_in?(:readability)}"
   li
-    = image_tag 'readability.png'  
-  li
-    = image_tag 'sync.png'  
+    = image_tag 'sync.png'
   li
     .flip
       .flipper
         = image_tag 'instapaper.png'
         div
-          span Soon  
+          span Soon
   li
     .flip
       .flipper
         = image_tag 'kippt.png'
         div
-          span Soon  
+          span Soon
 = link_to 'Login on Pocket', pocket_login_path, class:'text-centered btn'
 
 
