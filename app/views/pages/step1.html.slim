@@ -1,12 +1,13 @@
 h1.headlines.text-centered Read it Synced
 ul.readers
-  = link_to pocket_login_path do
-    li
-      = image_tag 'pocket.png', class: "#{'active' if is_authenticated_in?(:pocket)}"
-
-  = link_to "/auth/readability" do
-    li
-      = image_tag 'readability.png', class: "#{'active' if is_authenticated_in?(:readability)}"
+  li
+    = link_to pocket_login_path do
+      .pulse
+        = image_tag 'pocket.png', class: "#{'active' if is_authenticated_in?(:pocket)}"
+  li
+    = link_to "/auth/readability" do
+      .pulse
+        = image_tag 'readability.png', class: "#{'active' if is_authenticated_in?(:readability)}"
   li
     = image_tag 'sync.png'
   li
