@@ -373,6 +373,10 @@ ul.readers {
 }
 
 @media all and (min-width: 320px) and (max-width: 780px) {
+  .cd-primary-nav-trigger {
+    background-color: transparent;
+    height: 30px;
+  }
   .cd-primary-nav a {
     font-size: 1.5rem;
     display: inline-block;
