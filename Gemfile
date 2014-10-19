@@ -20,6 +20,9 @@ gem 'bitters',                '0.10.1'
 gem 'refills',                '0.0.2'
 gem 'instapaper'
 gem 'pocket-ruby',            '~> 0.0.5', require: 'pocket'
+gem 'readit', github: '29decibel/readit'
+gem 'omniauth'
+gem 'omniauth-readability', github: 'marcioj/omniauth-readability'
 
 group :production, :staging do
   gem 'rails_12factor',       '0.0.2'
