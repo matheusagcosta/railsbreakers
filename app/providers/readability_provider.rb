@@ -8,4 +8,8 @@ class ReadabilityProvider
       bookmark["article"]["url"]
     end
   end
+
+  def add_link(url)
+    @api.bookmark(url: url)
+  end
 end

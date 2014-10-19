@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.readability.com/api/rest/v1/bookmarks
+    body:
+      encoding: US-ASCII
+      string: url=www.google.com
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - OAuth oauth_consumer_key="guiloyins", oauth_nonce="dv1nC11JYrtD7dqcCCwQHuQcJjHi5zZL5iTscSTOM",
+        oauth_signature="Ah9vWFRpBjC8WlO2V7IsUGijJgU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1413697224", oauth_token="LXSUxcxGASBgMHsSZD", oauth_version="1.0"
+  response:
+    status:
+      code: 202
+      message: ACCEPTED
+    headers:
+      Content-Type:
+      - text/plain
+      Date:
+      - Sun, 19 Oct 2014 05:42:27 GMT
+      Location:
+      - https://www.readability.com/api/rest/v1/bookmarks/78274981
+      P3p:
+      - CP='Legacy Only. Go to https://readability.com/about/terms/ for full terms.'
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Set-Cookie:
+      - readabilityToken=cyGuPrDY8BAUzvHnprrM4z7rpq2WpCBjpeS5sKUN; expires=Sun, 16-Nov-2014
+        05:42:27 GMT; Max-Age=2419200; Path=/
+      Vary:
+      - Authorization, Cookie
+      X-Article-Location:
+      - "/api/rest/v1/articles/ch9hmdt9"
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 19 Oct 2014 05:40:25 GMT
+recorded_with: VCR 2.9.3
