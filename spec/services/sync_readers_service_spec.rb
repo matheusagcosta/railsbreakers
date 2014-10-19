@@ -1,28 +1,14 @@
 require 'rails_helper'
 
-class FakeProvider
-  attr_reader :added_links, :links, :added_links
-
-  def initialize(name, links)
-    @name = name
-    @links = links
-    @added_links = []
-  end
-
-  def add_link(link)
-    @added_links << link
-  end
-end
-
 RSpec.describe SyncReadersService, :type => :service do
 
   describe ".sync!" do
     let(:provider_a) do
-      FakeProvider.new(:a, ["foo.com", "bar.com"])
+      FakeProvider.new(["foo.com", "bar.com"])
     end
 
     let(:provider_b) do
-      FakeProvider.new(:b, ["lorem.com", "ipsum.com", "bar.com"])
+      FakeProvider.new(["lorem.com", "ipsum.com", "bar.com"])
     end
 
     let(:providers) { [provider_a, provider_b] }
