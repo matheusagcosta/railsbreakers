@@ -42,6 +42,7 @@ RSpec.describe PagesController, :type => :controller do
 
       it { should redirect_to(root_path) }
       it { should set_session(:pocket_access_token).to(access_token) }
+      it { should set_the_flash.to("Authenticated on Pocket") }
     end
 
     context 'not autorized' do
@@ -50,6 +51,7 @@ RSpec.describe PagesController, :type => :controller do
       }
 
       it { should redirect_to(root_path) }
+      it { should set_the_flash.to("Failed to authenticate on Pocket") }
 
     end
 

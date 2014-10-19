@@ -17,9 +17,9 @@ class PagesController < ApplicationController
   def pocket_callback
     result = Pocket.get_result(session[:code], :redirect_uri => pocket_callback_url)
     session[:pocket_access_token] = result['access_token']
-    redirect_to root_path
+    redirect_to root_path, notice: "Authenticated on Pocket"
 
   rescue Faraday::ClientError
-    redirect_to root_path
+    redirect_to root_path, alert: "Failed to authenticate on Pocket"
   end
 end
