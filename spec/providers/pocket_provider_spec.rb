@@ -1,7 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe PocketProvider, :type => :provider do
-  let!(:provider) { PocketProvider.new('24ed0c7a-f288-ee0c-a662-677034') }
+  subject do
+    PocketProvider.new('24ed0c7a-f288-ee0c-a662-677034')
+  end
 
   describe "#links", :vcr do
     let(:result) do
@@ -13,13 +15,13 @@ RSpec.describe PocketProvider, :type => :provider do
     end
 
     it "returns the links" do
-      expect(provider.links).to eq(result)
+      expect(subject.links).to eq(result)
     end
   end
 
   describe "#add_link", vcr: { cassette_name: "PocketProvider/_add_link" } do
     it "does add links to added_links" do
-      expect(provider.add_link("http://railsrumble.com")["item"]["normal_url"]).to eq("http://railsrumble.com")
+      expect(subject.add_link("http://railsrumble.com")["item"]["normal_url"]).to eq("http://railsrumble.com")
     end
   end
 end
