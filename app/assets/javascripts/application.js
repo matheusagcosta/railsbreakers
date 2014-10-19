@@ -19,5 +19,7 @@
 $(function() {
   $('#sync_button').click(function() {
     $('#sync_image').addClass('sync');
-  })
+  });
+
+  $('#flash_notice, #flash_alert').delay(5000).fadeOut('slow');
 });
