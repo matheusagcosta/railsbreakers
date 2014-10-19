@@ -42,8 +42,6 @@
         width: 100%;
 
 	      img {
-	        -moz-animation: rotate 3.5s infinite;
-	        -webkit-animation: rotate 3.5s infinite;
 	        cursor: default;
           display: table;
           margin: 0 auto;
@@ -58,19 +56,24 @@
 }
 
 @media only screen and (max-width : 767px) {
-
+  #flash_alert {
+  	text-align: center;
+  }
+  #rumble2014 {
+  	display: none !important;
+  }
 }
 
 @media only screen and (max-width : 480px) {
-	html {
-		overflow: hidden;
+	html, body {
+		overflow-y: hidden !important;
 	}
 	.logo {
 		background-size: 80%;
 		margin-top: 10px;
 	}
 	.headlines {
-    font-size: 35px;
+    font-size: 25px;
 	}
 	.btn {
     font-size: 25px;
@@ -80,7 +83,7 @@
   ul.readers {
   	li {
   		img {
-  			max-width: 100px;
+  			max-width: 125px;
   		}
   	}
   }
