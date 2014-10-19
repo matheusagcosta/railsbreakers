@@ -18,14 +18,14 @@ RSpec.describe PagesController, :type => :controller do
 
   describe "GET pocket_login", :vcr do
     before { get :pocket_login }
-      
+
     context 'common' do
       it { expect(response).to have_http_status(:redirect) }
     end
   end
 
   describe "GET pocket_callback", :vcr do
-    
+
     context 'common' do
       let(:access_token) { '123412341234' }
       before do
@@ -39,7 +39,7 @@ RSpec.describe PagesController, :type => :controller do
     end
 
     context 'not autorized' do
-      before { 
+      before {
         get :pocket_callback, {}, { code: "1dac83e1-fa2d-5ae1-d2c1-821350" }
       }
 
