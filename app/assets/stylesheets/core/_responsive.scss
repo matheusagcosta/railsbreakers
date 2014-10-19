@@ -3,6 +3,14 @@
 }
 
 @media only screen and (max-width : 979px) {
+	.headlines { 
+		font-size: 45px;
+	}
+	.btn {
+		font-size: 30px;
+		height: 120px;
+		line-height: 120px;
+	}
 	ul {
 	  display: table;
 	  margin: 5% auto;
@@ -17,6 +25,7 @@
 	      cursor: pointer;
 	      display: block;
         margin:0 auto;
+        max-width: 150px;
 
 	      &.active {
 	        border: 5px solid #8FC29C;
