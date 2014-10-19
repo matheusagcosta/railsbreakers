@@ -9,8 +9,7 @@ RSpec.describe SyncController, :type => :controller do
 
     context "authenticated at least in 2 services" do
       before do
-        expect(controller).to receive(:is_authenticated_in?).at_least(1).with(:pocket).and_return(true)
-        expect(controller).to receive(:is_authenticated_in?).at_least(1).with(:readability).and_return(true)
+        expect(controller).to receive(:authenticated_providers).at_least(1).and_return([FakeProvider.new, FakeProvider.new])
         expect_any_instance_of(SyncReadersService).to receive(:sync!)
       end
 
@@ -22,7 +21,7 @@ RSpec.describe SyncController, :type => :controller do
 
     context "without enough services" do
       before do
-        expect(controller).to receive(:is_authenticated_in?).with(:pocket).and_return(false)
+        expect(controller).to receive(:authenticated_providers).at_least(1).and_return([FakeProvider.new])
         expect_any_instance_of(SyncReadersService).to_not receive(:sync!)
       end
 

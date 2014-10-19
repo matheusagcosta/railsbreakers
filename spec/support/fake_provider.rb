@@ -1,7 +1,7 @@
 class FakeProvider
   attr_reader :added_links, :links, :added_links
 
-  def initialize(links)
+  def initialize(links = [])
     @links = links
     @added_links = []
   end

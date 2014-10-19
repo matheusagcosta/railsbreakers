@@ -22,7 +22,7 @@ ul.readers
         = image_tag 'kippt.png'
         div
           span Soon
-- if is_authenticated_in?(:pocket) && is_authenticated_in?(:readability)
+- if authenticated_providers.size > 1
   = link_to 'Synchronize now', sync_path, class:'text-centered btn', method: :post
 - else
   .space-fix
