@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://getpocket.com/v3/get
+    body:
+      encoding: UTF-8
+      string: '{"detailType":"complete","consumer_key":"33451-7ae02e7a1d7ad81154f53788","access_token":"24ed0c7a-f288-ee0c-a662-677034"}'
+    headers:
+      User-Agent:
+      - Pocket Ruby Gem 0.0.5
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 19 Oct 2014 15:53:56 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      P3p:
+      - policyref="/w3c/p3p.xml", CP="ALL CURa ADMa DEVa OUR IND UNI COM NAV INT STA
+        PRE"
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Set-Cookie:
+      - PHPSESSID=vsg8r9r0ubnms8dr6o9nl8ks26; path=/
+      Status:
+      - 200 OK
+      X-Limit-Key-Limit:
+      - '10000'
+      X-Limit-Key-Remaining:
+      - '9999'
+      X-Limit-Key-Reset:
+      - '3600'
+      X-Limit-User-Limit:
+      - '500'
+      X-Limit-User-Remaining:
+      - '499'
+      X-Limit-User-Reset:
+      - '3600'
+      X-Source:
+      - Pocket
+      Content-Length:
+      - '7584'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"complete":1,"list":{"709109874":{"item_id":"709109874","resolved_id":"709109874","given_url":"http:\/\/www.lowcarb-paleo.com.br\/2014\/09\/ensaio-clinico-randomizado-low-carb_7.html","given_title":"Dieta
+        Low-Carb e Paleol\u00edtica: Ensaio Cl\u00ednico Randomizado: low carb versus
+        l","favorite":"0","status":"0","time_added":"1413654665","time_updated":"1413654673","time_read":"0","time_favorited":"0","sort_id":0,"resolved_title":"Ensaio
+        Cl\u00ednico Randomizado: low carb versus low fat e composi\u00e7\u00e3o corporal","resolved_url":"http:\/\/www.lowcarb-paleo.com.br\/2014\/09\/ensaio-clinico-randomizado-low-carb_7.html","excerpt":"Ok,
+        como at\u00e9 as pedras j\u00e1 sabem, a perda de peso \u00e9 maior em dietas
+        low carb do que em dietas de baixa gordura, e este estudo randomizado n\u00e3o
+        \u00e9 exce\u00e7\u00e3o (linha cont\u00ednua-> low fat; linha pontilhada->
+        low carb): Por\u00e9m, a perda de peso por si s\u00f3 n\u00e3o nos serve.","is_article":"1","is_index":"0","has_video":"0","has_image":"1","word_count":"1207","tags":{"health":{"item_id":"709109874","tag":"health"}},"image":{"item_id":"709109874","src":"http:\/\/2.bp.blogspot.com\/-t_CSLvae-m4\/VAsaxk-43qI\/AAAAAAAALNM\/PU2INiPm_-g\/s1600\/Screenshot%2B2014-09-06%2Bat%2B11.31.12.png","width":"280","height":"176"},"images":{"1":{"item_id":"709109874","image_id":"1","src":"http:\/\/2.bp.blogspot.com\/-t_CSLvae-m4\/VAsaxk-43qI\/AAAAAAAALNM\/PU2INiPm_-g\/s1600\/Screenshot%2B2014-09-06%2Bat%2B11.31.12.png","width":"280","height":"176","credit":"","caption":""},"2":{"item_id":"709109874","image_id":"2","src":"http:\/\/1.bp.blogspot.com\/-SA0sujqVagE\/VAsaAjJvc7I\/AAAAAAAALM8\/ZbpxtoO1liU\/s1600\/Screenshot%2B2014-09-06%2Bat%2B11.27.19.png","width":"280","height":"175","credit":"","caption":""},"3":{"item_id":"709109874","image_id":"3","src":"http:\/\/4.bp.blogspot.com\/-D7oCrsHSXnQ\/VAsYWicjh-I\/AAAAAAAALMg\/zXKw4WWGlK4\/s1600\/Screenshot%2B2014-09-06%2Bat%2B11.20.34.png","width":"280","height":"172","credit":"","caption":""},"4":{"item_id":"709109874","image_id":"4","src":"http:\/\/1.bp.blogspot.com\/-gIy-OQwzmF8\/VAstRIJm6aI\/AAAAAAAALNc\/hcCUvjtP1nY\/s1600\/Screenshot%2B2014-09-06%2Bat%2B12.49.23.png","width":"280","height":"57","credit":"","caption":""},"5":{"item_id":"709109874","image_id":"5","src":"http:\/\/1.bp.blogspot.com\/-kV1rBJionRg\/VAsyDAZJ9OI\/AAAAAAAALN4\/_x94kBNvX2s\/s1600\/Screenshot%2B2014-09-06%2Bat%2B13.10.07.png","width":"280","height":"61","credit":"","caption":""},"6":{"item_id":"709109874","image_id":"6","src":"http:\/\/1.bp.blogspot.com\/-xKMOifQ59zQ\/VAs13jIxfpI\/AAAAAAAALOE\/85x2bJUWjR0\/s1600\/Screenshot%2B2014-09-06%2Bat%2B13.21.22.png","width":"280","height":"85","credit":"","caption":""},"7":{"item_id":"709109874","image_id":"7","src":"http:\/\/2.bp.blogspot.com\/-CA33EeZ7oiU\/VAs4vnaNa2I\/AAAAAAAALOQ\/T5PczrQ9_Co\/s1600\/Screenshot%2B2014-09-06%2Bat%2B13.33.09.png","width":"280","height":"91","credit":"","caption":""}}},"617422791":{"item_id":"617422791","resolved_id":"617422791","given_url":"http:\/\/cedricruiz.me\/blog\/functional-coffeescript-for-the-impatient\/","given_title":"Functional
+        CoffeeScript for the impatient \u2013 Blog of Cedric Ruiz","favorite":"0","status":"0","time_added":"1413654655","time_updated":"1413654661","time_read":"0","time_favorited":"0","sort_id":1,"resolved_title":"Functional
+        CoffeeScript for the impatient","resolved_url":"http:\/\/cedricruiz.me\/blog\/functional-coffeescript-for-the-impatient\/","excerpt":"So
+        you\u2019re using CoffeeScript, great! But are you exploiting all its features?
+        Functional CoffeeScript is fun, but you need some helpers. In this tutorial
+        we\u2019ll cover the most essential functional helpers and techniques to build
+        a solid foundation for your next project. Let\u2019s keep it DRY!","is_article":"1","is_index":"0","has_video":"0","has_image":"0","word_count":"1756","tags":{"programming":{"item_id":"617422791","tag":"programming"}},"authors":{"16264524":{"item_id":"617422791","author_id":"16264524","name":"Cedric
+        Ruiz","url":"http:\/\/cedricruiz.me\/blog\/author\/elclanrs\/"}}},"167536341":{"item_id":"167536341","resolved_id":"167536341","given_url":"http:\/\/devblog.avdi.org\/2008\/02\/23\/why-monkeypatching-is-destroying-ruby\/","given_title":"Monkeypatching
+        is Destroying Ruby | Virtuous Code","favorite":"0","status":"0","time_added":"1413654640","time_updated":"1413654647","time_read":"0","time_favorited":"0","sort_id":2,"resolved_title":"Monkeypatching
+        is Destroying Ruby","resolved_url":"http:\/\/devblog.avdi.org\/2008\/02\/23\/why-monkeypatching-is-destroying-ruby\/","excerpt":"(The
+        title of this post is intended to be deliberately provocative, as well as
+        being a nod to Steven Colbert\u2019s \u201cThe People Destroying America\u201d
+        segments. It\u2019s provocative because I want to get people talking about
+        this issue.","is_article":"1","is_index":"0","has_video":"0","has_image":"0","word_count":"1323","tags":{"programming":{"item_id":"167536341","tag":"programming"}},"authors":{"2523256":{"item_id":"167536341","author_id":"2523256","name":"Avdi
+        Grimm","url":"http:\/\/devblog.avdi.org\/author\/avdi\/"}}},"742551314":{"item_id":"742551314","resolved_id":"742551314","given_url":"http:\/\/codon.com\/refactoring-ruby-with-monads?utm_content=buffer2eb47&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer","given_title":"Refactoring
+        Ruby with Monads","favorite":"0","status":"0","time_added":"1413654632","time_updated":"1413654637","time_read":"0","time_favorited":"0","sort_id":3,"resolved_title":"Refactoring
+        Ruby with Monads","resolved_url":"http:\/\/codon.com\/refactoring-ruby-with-monads?utm_content=buffer2eb47&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer","excerpt":"First,
+        I\u2019d like to look at some code that has to deal with nils.  Each Project
+        has a Person who created it; each Person has an Address; each Address has
+        a Country; each Country has a capital City; and each City has weather information,
+        which, for the sake of simplicity, is just a string.","is_article":"1","is_index":"0","has_video":"1","has_image":"1","word_count":"3506","tags":{"programming":{"item_id":"742551314","tag":"programming"}},"authors":{"24681233":{"item_id":"742551314","author_id":"24681233","name":"Tony
+        Hoare","url":"http:\/\/www.cs.ox.ac.uk\/people\/tony.hoare\/"}},"image":{"item_id":"742551314","src":"http:\/\/img.youtube.com\/vi\/uTR__8RvgvM\/0.jpg","width":"480","height":"360"},"images":{"1":{"item_id":"742551314","image_id":"1","src":"http:\/\/img.youtube.com\/vi\/uTR__8RvgvM\/0.jpg","width":"480","height":"360","credit":"","caption":""}},"videos":{"1":{"item_id":"742551314","video_id":"1","src":"http:\/\/www.youtube.com\/embed\/uTR__8RvgvM?rel=0","width":"0","height":"0","type":"1","vid":"uTR__8RvgvM"}}},"276198225":{"item_id":"276198225","resolved_id":"276198225","given_url":"http:\/\/codon.com\/programming-with-nothing","given_title":"Programming
+        with Nothing","favorite":"0","status":"0","time_added":"1413654620","time_updated":"1413654628","time_read":"0","time_favorited":"0","sort_id":4,"resolved_title":"Programming
+        with Nothing","resolved_url":"http:\/\/codon.com\/programming-with-nothing","excerpt":"Ruby
+        is a powerful language, but how much power does it have if you remove all
+        of its datatypes except for Proc and all of its features except for Proc.","is_article":"1","is_index":"0","has_video":"0","has_image":"0","word_count":"9112","tags":{"programming":{"item_id":"276198225","tag":"programming"}}}},"error":null,"search_meta":{"search_type":"normal"},"since":1413734036}'
+    http_version: 
+  recorded_at: Sun, 19 Oct 2014 15:53:56 GMT
+recorded_with: VCR 2.9.3

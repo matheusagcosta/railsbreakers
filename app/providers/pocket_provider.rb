@@ -1,12 +1,16 @@
 class PocketProvider
-  attr_reader :added_links, :links, :added_links
+  def initialize(access_token)
+    @client = Pocket.client(access_token: access_token)
+  end
 
-  def initialize(links)
-    @links = links
-    @added_links = []
+  def links
+    links = []
+    @client.retrieve(detailType: :complete)["list"].each do |id, item|
+      links << item["given_url"]
+    end
+    links
   end
 
   def add_link(link)
-    @added_links << link
   end
 end
