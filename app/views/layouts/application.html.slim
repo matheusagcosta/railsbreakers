@@ -38,9 +38,20 @@ html lang="pt"
      ul.cd-primary-nav
       li
         a How it Works
-      li.cd-label This application was made on the purpose to backup and sync all your content between reading lists.
-      li.cd-label It's pretty simple to use: First you click in one of the services to login in, then you choose another one (at least 2).
-      li.cd-label After that, you just need to click on the button "Synchronize now" and voilà, the magic happens.
+      li.cd-label 
+        | This application was made on the purpose to backup and sync all your content between reading lists. 
+        br
+        | It's pretty simple to use:
+      li.cd-label.steps-label
+        span 1
+        | Login in one of the services.
+      li.cd-label.steps-label
+        span 2
+        | Choose another one to get synced (at least 2).
+      li.cd-label.steps-label
+        span 3
+        | Click on the button "Synchronize now" and done.
+      li.cd-label Don't worry, we don't store any personal information at all.
     = render 'flash_messages'
     = yield
     

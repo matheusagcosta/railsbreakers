@@ -365,6 +365,7 @@ ul.readers {
 }
 @media only screen and (min-width: 768px) {
   .cd-primary-nav-trigger {
+    margin-top: 1.5em;
     width: 100px;
     padding-left: 1em;
     background-color: transparent;
@@ -434,6 +435,7 @@ ul.readers {
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
+  font-size: 25px;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
@@ -444,14 +446,34 @@ ul.readers {
 }
 .cd-primary-nav .cd-label {
   color: #fff;
-  display: table;
+  display: block;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   font-size: 0.875rem;
   margin: 2.4em auto .8em;
   padding: 0 40px;
-  text-align: justify;
+  text-align: left;
+  width: 50%;
+
+  &.steps-label {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  span {
+    background: #36acb4;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    font-size: 20px;
+    line-height: 20px;
+    height: 40px;
+    margin: 0 20px 0 0;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+  }
 }
 .cd-primary-nav.is-visible {
   -webkit-transform: translateY(0);
@@ -470,10 +492,6 @@ ul.readers {
     font-size: 30px;
     font-size: 1.875rem;
   }
-  .cd-primary-nav .cd-label {
-    font-size: 16px;
-    font-size: 1rem;
-  }
 }
 
 @media all and (min-width: 320px) and (max-width: 780px) {
@@ -482,7 +500,7 @@ ul.readers {
     height: 70px;
   }
   .cd-primary-nav a {
-    font-size: 1.5rem;
+    font-size: 35px;
     display: inline-block;
     padding: .4em 1em;
     border-radius: 0.25em;
@@ -490,6 +508,23 @@ ul.readers {
     -moz-transition: background 0.2s;
     transition: background 0.2s;
     color: #36acb4;
+  }
+  .cd-primary-nav .cd-label {
+    display: table;
+    font-size: 16px;
+    font-size: 1rem;
+    text-align: justify;
+    width: 90%;
+
+    &.steps-label {
+      text-align: center;
+    }
+
+    span {
+      float: none;
+      display: table;
+      margin: 0 auto;
+    }
   }
 }
 
