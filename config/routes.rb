@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'sync', to: 'sync#create'
+
   root 'pages#step1'
   get 'pages/step1'
   get 'pages/step2'
