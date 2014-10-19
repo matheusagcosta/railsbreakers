@@ -37,7 +37,7 @@ RSpec.describe PagesController, :type => :controller do
     end
 
     it { should redirect_to(root_path) }
-    it { should set_session(:access_token).to(access_token) }
+    it { should set_session(:pocket_access_token).to(access_token) }
 
   end
 
