@@ -16,13 +16,6 @@ RSpec.describe PagesController, :type => :controller do
     end
   end
 
-  describe "GET step3" do
-    it "returns http success" do
-      get :step3
-      expect(response).to have_http_status(:success)
-    end
-  end
-
   describe "GET pocket_login", :vcr do
     before { get :pocket_login }
       

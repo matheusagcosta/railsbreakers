@@ -5,9 +5,6 @@ class PagesController < ApplicationController
   def step2
   end
 
-  def step3
-  end
-
   def pocket_login
     session[:code] = Pocket.get_code(:redirect_uri => pocket_callback_url)
     new_url = Pocket.authorize_url(:code => session[:code], :redirect_uri => pocket_callback_url)
