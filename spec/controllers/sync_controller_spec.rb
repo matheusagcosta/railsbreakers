@@ -16,6 +16,7 @@ RSpec.describe SyncController, :type => :controller do
       before { action }
 
       it { should redirect_to(root_path) }
+      it { should set_the_flash[:title].to("Now check it out in your readers") }
       it { should set_the_flash.to("Services are synchronized") }
     end
 
