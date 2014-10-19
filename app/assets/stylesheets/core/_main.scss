@@ -99,13 +99,21 @@ ul.readers {
 
     &:nth-child(1),
     &:nth-child(2) {
-      transform: translateZ(0px);
 
-      &:hover {
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-name: pulse;
-        animation-timing-function: linear;
+      .pulse {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        
+        &:hover, &:focus, &:active {
+          -webkit-animation-name: pulse;
+          animation-name: pulse;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+        }
       }
     }
 
@@ -422,8 +430,32 @@ ul.readers {
 
 /** Animations **/
 
+/* Pulse */
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
 
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+/** Rotate **/
 @-moz-keyframes rotate
 {
 0%   {-moz-transform: rotate(0deg);}
