@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://getpocket.com/v3/add
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://railsrumble.com","consumer_key":"33451-7ae02e7a1d7ad81154f53788","access_token":"24ed0c7a-f288-ee0c-a662-677034"}'
+    headers:
+      User-Agent:
+      - Pocket Ruby Gem 0.0.5
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 19 Oct 2014 17:23:56 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      P3p:
+      - policyref="/w3c/p3p.xml", CP="ALL CURa ADMa DEVa OUR IND UNI COM NAV INT STA
+        PRE"
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Set-Cookie:
+      - PHPSESSID=88e226gekd23o1t360cu5l9q75; path=/
+      Status:
+      - 200 OK
+      X-Limit-Key-Limit:
+      - '10000'
+      X-Limit-Key-Remaining:
+      - '9998'
+      X-Limit-Key-Reset:
+      - '3561'
+      X-Limit-User-Limit:
+      - '500'
+      X-Limit-User-Remaining:
+      - '498'
+      X-Limit-User-Reset:
+      - '3561'
+      X-Source:
+      - Pocket
+      Content-Length:
+      - '4635'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"item":{"item_id":"1946263","normal_url":"http:\/\/railsrumble.com","resolved_id":"1946263","extended_item_id":"1946263","resolved_url":"http:\/\/railsrumble.com\/","domain_id":"487336","origin_domain_id":"772","response_code":"200","mime_type":"text\/html","content_length":"3238","encoding":"utf-8","date_resolved":"2014-10-03
+        13:32:35","date_published":"2014-10-18 00:00:00","title":"2014 Rails Rumble","excerpt":"When
+        registration opens (Oct 6 \u2014 12), you''ll be able to reserve a spot for
+        your team and invite up to three others to join you. And while this year will
+        be the biggest yet, spaces are still limited. So, make sure to register early!","word_count":"182","innerdomain_redirect":"1","login_required":"0","has_image":"1","has_video":"0","is_index":"1","is_article":"0","used_fallback":"1","lang":"en","authors":[],"images":{"1":{"item_id":"1946263","image_id":"1","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1406059968\/heroku.png","width":"0","height":"0","credit":"","caption":""},"2":{"item_id":"1946263","image_id":"2","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1412338647\/swell.png","width":"0","height":"0","credit":"","caption":""},"3":{"item_id":"1946263","image_id":"3","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1406059305\/github.png","width":"0","height":"0","credit":"","caption":""},"4":{"item_id":"1946263","image_id":"4","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1406059524\/deploy.png","width":"0","height":"0","credit":"","caption":""},"5":{"item_id":"1946263","image_id":"5","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1406059416\/codebase.png","width":"0","height":"0","credit":"","caption":""},"6":{"item_id":"1946263","image_id":"6","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1406059482\/Sirportly_2013_Logo.png","width":"0","height":"0","credit":"","caption":""},"7":{"item_id":"1946263","image_id":"7","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407241223\/newrelic.png","width":"0","height":"0","credit":"","caption":""},"8":{"item_id":"1946263","image_id":"8","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407245970\/sendgrid.png","width":"0","height":"0","credit":"","caption":""},"9":{"item_id":"1946263","image_id":"9","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407240999\/twilio.png","width":"0","height":"0","credit":"","caption":""},"10":{"item_id":"1946263","image_id":"10","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1406059618\/sprintly.png","width":"0","height":"0","credit":"","caption":""},"11":{"item_id":"1946263","image_id":"11","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407246452\/papertrail.png","width":"0","height":"0","credit":"","caption":""},"12":{"item_id":"1946263","image_id":"12","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407348452\/rubyonrailspodcast.png","width":"0","height":"0","credit":"","caption":""},"13":{"item_id":"1946263","image_id":"13","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407534244\/codeschool.png","width":"0","height":"0","credit":"","caption":""},"14":{"item_id":"1946263","image_id":"14","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1409312865\/blitline.png","width":"0","height":"0","credit":"","caption":""},"15":{"item_id":"1946263","image_id":"15","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1407246774\/taco.png","width":"0","height":"0","credit":"","caption":""},"16":{"item_id":"1946263","image_id":"16","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1409406713\/honeybadger.png","width":"0","height":"0","credit":"","caption":""},"17":{"item_id":"1946263","image_id":"17","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1409338971\/algolia.png","width":"0","height":"0","credit":"","caption":""},"18":{"item_id":"1946263","image_id":"18","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1409854320\/rollbar.png","width":"0","height":"0","credit":"","caption":""},"19":{"item_id":"1946263","image_id":"19","src":"https:\/\/s3.amazonaws.com\/railsrumble.com\/sponsors\/r14\/sponsor-1410526087\/agilebits.png","width":"0","height":"0","credit":"","caption":""}},"videos":[],"resolved_normal_url":"http:\/\/railsrumble.com","given_url":"http:\/\/railsrumble.com"},"status":1}'
+    http_version: 
+  recorded_at: Sun, 19 Oct 2014 17:23:56 GMT
+recorded_with: VCR 2.9.3

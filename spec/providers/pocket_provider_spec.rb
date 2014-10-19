@@ -17,10 +17,9 @@ RSpec.describe PocketProvider, :type => :provider do
     end
   end
 
-  # describe "#add_link" do
-  #   it "does add links to added_links" do
-  #     provider.add_link('railsrumble.com')
-  #     expect(provider.added_links).to eq(['railsrumble.com'])
-  #   end
-  # end
+  describe "#add_link", vcr: { cassette_name: "PocketProvider/_add_link" } do
+    it "does add links to added_links" do
+      expect(provider.add_link("http://railsrumble.com")["item"]["normal_url"]).to eq("http://railsrumble.com")
+    end
+  end
 end

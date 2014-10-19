@@ -12,5 +12,6 @@ class PocketProvider
   end
 
   def add_link(link)
+    @client.add(url: link)
   end
 end
