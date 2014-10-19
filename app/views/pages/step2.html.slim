@@ -1,5 +1,30 @@
-h1.headlines.text-centered
-    span 1 
-	| Choose an account to sync
-= link_to "Login with Pocket", pages_step3_path, class:'text-centered btn btn-pocket'
-= link_to "Login with Instapaper", pages_step3_path, class:'text-centered btn btn-instapaper'
+h1.headlines.text-centered Read it Synced
+ul.readers
+  li
+    = link_to pocket_login_path do
+      .pulse
+        = image_tag 'pocket.png', class: "#{'active' if is_authenticated_in?(:pocket)}"
+  li
+    = link_to "/auth/readability" do
+      .pulse
+        = image_tag 'readability.png', class: "#{'active' if is_authenticated_in?(:readability)}"
+  li
+    .sync
+      = image_tag 'sync.png'
+  li
+    .flip
+      .flipper
+        = image_tag 'instapaper.png'
+        div
+          span Soon
+  li
+    .flip
+      .flipper
+        = image_tag 'kippt.png'
+        div
+          span Soon
+- if is_authenticated_in?(:pocket) && is_authenticated_in?(:readability)
+  = link_to 'Synchronize now', sync_path, class:'text-centered btn', method: :post
+- else
+  span.text-centered.btn Please select a service
+

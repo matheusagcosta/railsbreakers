@@ -55,7 +55,7 @@ a:hover {
 .headlines {
 	color: #2d3035;
   font-size: 60px;
-  margin-top: 5%;
+  margin-top: 3%;
 	text-transform: uppercase;
 }
 
@@ -125,10 +125,12 @@ ul.readers {
     }
 
     &:nth-child(3) {
-
-      img {
-        -moz-animation: rotate 3.5s infinite;
-        -webkit-animation: rotate 3.5s infinite;
+      .sync {
+        
+        img {
+          -moz-animation: rotate 1s linear infinite;
+          -webkit-animation: rotate 1s linear infinite;
+        }
       }
     }
 
