@@ -10,7 +10,7 @@ RSpec.describe SyncController, :type => :controller do
     context "authenticated at least in 2 services" do
       before do
         expect(controller).to receive(:is_authenticated_in?).with(:pocket).and_return(true)
-        expect(controller).to receive(:is_authenticated_in?).with(:readability).and_return(true)
+        expect(controller).to receive(:is_authenticated_in?).at_least(1).with(:readability).and_return(true)
         expect_any_instance_of(SyncReadersService).to receive(:sync!)
       end
 
