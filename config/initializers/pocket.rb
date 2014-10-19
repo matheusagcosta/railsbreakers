@@ -1,3 +1,3 @@
 Pocket.configure do |config|
-  config.consumer_key = '33451-7ae02e7a1d7ad81154f53788'
+  config.consumer_key = ENV['POCKET_CONSUMER_KEY']
 end
