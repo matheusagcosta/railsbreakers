@@ -16,7 +16,7 @@ class PagesController < ApplicationController
 
   def pocket_callback
     result = Pocket.get_result(session[:code], :redirect_uri => pocket_callback_url)
-    session[:access_token] = result['access_token']
+    session[:pocket_access_token] = result['access_token']
     redirect_to root_path
   end
 end

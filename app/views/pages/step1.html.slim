@@ -1,7 +1,8 @@
 h1.headlines.text-centered Read it Synced
 ul
-  li
-    = image_tag 'pocket.png'
+  = link_to pocket_login_path do
+    li 
+      = image_tag 'pocket.png', class: "#{'active' if session[:pocket_access_token]}"
   li
     = image_tag 'readability.png'  
   li
@@ -20,11 +21,5 @@ ul
           span Soon  
 = link_to 'Login on Pocket', pocket_login_path, class:'text-centered btn'
 
-javascript:
-  $(document).ready(function(){
-    $("img").click(function(){
-      var $this = $( this );
-      $this.toggleClass("active");
-    });
-  });
+
 
