@@ -1,3 +1,6 @@
 - flash.each do |key, value|
   div id="flash_#{key}"
     = value
+- [[:notice, "Sucesso"], [:alert, "Erro"]].each do |key, value|
+  div id="flash_#{key}"
+    = value
