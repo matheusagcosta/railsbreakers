@@ -26,6 +26,9 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Varela Round', sans-serif;
 }
 
+a:hover {
+  color: #ddd;
+}
 .text-centered {
 	text-align: center !important;
 }
@@ -43,6 +46,10 @@ body, h1, h2, h3, h4, h5, h6 {
   margin-top: 2.2em;
   width: 100px;
   height: 68px;
+  
+  &:hover {
+    opacity: .9;
+  }
 }
 
 .headlines {
